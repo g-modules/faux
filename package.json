@@ -1,0 +1,25 @@
+{
+	"name": "@g-modules/faux",
+	"version": "1.0.0",
+	"description": "Fake/Mock Data Generation.",
+	"author": "Constantine Gololobov <hello@gololobov.dev> (https://gololobov.dev)",
+	"license": "MIT",
+	"homepage": "https://github.com/g-modules/faux",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/g-modules/faux.git"
+	},
+	"keywords": ["fake data", "mock", "generator", "random", "mocking", "gololobov", "es6"],
+	"bugs": {
+		"url": "https://github.com/g-modules/faux/issues"
+	},
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint 'src/**/*.{js}'",
+		"lint:fix": "eslint 'src/**/*.{js}' --fix"
+	},
+	"devDependencies": {
+		"@g-modules/eslint-config": "latest",
+		"eslint": "^7.32.0"
+	}
+}

@@ -1,0 +1,6 @@
+{
+    "extends": [
+        "@g-modules/eslint-config",
+        "plugin:vue/vue3-recommended"
+    ]
+}
