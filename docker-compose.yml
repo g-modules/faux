@@ -1,11 +1,15 @@
 version: '3.9'
 services:
-  # Faux
-  faux:
-      container_name: faux
-      image: node:16.6.0-alpine3.13
-      volumes:
+    # Faux
+    faux:
+        container_name: faux
+        hostname: api
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: faux:1.0
+        volumes:
           - .:/home/app
           - /home/app/node_modules
-      working_dir: /home/app
-      command: npm run dev
+        working_dir: /home/app
+        command: npm run dev
