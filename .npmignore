@@ -1,4 +1,4 @@
-./tests
+/tests
 .babelrc
 .eslintrc.json
 jest.config.json
