@@ -9,17 +9,34 @@
 		"type": "git",
 		"url": "https://github.com/g-modules/faux.git"
 	},
-	"keywords": ["fake data", "mock", "generator", "random", "mocking", "gololobov", "es6"],
+	"keywords": [
+		"fake data",
+		"mock",
+		"generator",
+		"random",
+		"mocking",
+		"gololobov",
+		"es6"
+	],
 	"bugs": {
 		"url": "https://github.com/g-modules/faux/issues"
 	},
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
-		"lint": "eslint 'src/**/*.{js}'",
-		"lint:fix": "eslint 'src/**/*.{js}' --fix"
+		"dev": "nodemon index.js",
+		"test": "jest",
+		"lint": "eslint '**/*.js'",
+		"lint:fix": "eslint '**/*.js' --fix"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.15.0",
+		"@babel/node": "^7.14.9",
+		"@babel/preset-env": "^7.15.0",
 		"@g-modules/eslint-config": "latest",
-		"eslint": "^7.32.0"
+		"eslint": "^7.32.0",
+		"jest": "^27.0.6",
+		"jest-extended": "^0.11.5",
+		"nodemon": "^2.0.12"
 	}
 }
