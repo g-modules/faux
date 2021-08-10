@@ -7,7 +7,7 @@
 	"homepage": "https://github.com/g-modules/faux",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/g-modules/faux.git"
+		"url": "git+https://github.com/g-modules/faux.git"
 	},
 	"keywords": [
 		"fake data",
