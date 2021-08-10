@@ -1,6 +1,7 @@
 /* global describe, test, expect */
 import { randomNumber, randomBool, randomId, capitalizeFirstLetter, shuffleArray, uniqObjectsInArray } from "../../../src/helpers/utils.js";
 
+
 describe( "randomNumber():", () => {
 	const minimum = -10;
 	const maximum = 10;
@@ -33,6 +34,16 @@ describe( "capitalizeFirstLetter():", () => {
 	test( "should return a string", () => expect( result ).toBeString() );
 	test( "shouldn't return an empty string", () => expect( result ).not.toBeEmpty() );
 	test( "shouldn't return unchanged string", () => expect( result ).not.toBe( originalString ) );
+	test( "should throw an error with empty param", () => {
+		expect( () => {
+			capitalizeFirstLetter();
+		}).toThrow();
+	});
+	test( "should throw an error when not a string passing", () => {
+		expect( () => {
+			capitalizeFirstLetter( 42 );
+		}).toThrow();
+	});
 });
 
 describe( "shuffleArray():", () => {

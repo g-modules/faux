@@ -25,7 +25,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "nodemon index.js",
-		"test": "jest",
+		"test": "jest --coverage",
 		"lint": "eslint '**/*.js'",
 		"lint:fix": "eslint '**/*.js' --fix"
 	},

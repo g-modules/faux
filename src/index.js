@@ -12,9 +12,9 @@ export default function faux () {
 	// const randomIdValue = randomId()
 	// console.log(randomIdValue)
 
-	// const originalString = 'fdfd'
-	// const upperCasedString = capitalizeFirstLetter(originalString)
-	// console.log(`${originalString} => ${upperCasedString}`)
+	// const originalString = 4;
+	// const upperCasedString = capitalizeFirstLetter( originalString );
+	// console.log( `${originalString} => ${upperCasedString}` );
 
 	// const originalArray = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, {hello: "world"}, ["a", "b", "c"], undefined, null ]
 	// const shuffledArray = shuffleArray(originalArray)
@@ -35,5 +35,4 @@ export default function faux () {
 	// 	"text": "hi"
 	// }];
 	// const uniq = uniqObjectsInArray( array, "id" );
-	// console.log(uniq)
 }

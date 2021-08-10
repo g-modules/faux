@@ -1,16 +1,6 @@
 /* eslint no-magic-numbers: 0 */
 import { logger } from "./logger.js";
 
-// calling when required param is undefined
-const isRequired = () => {
-	try {
-		throw new Error( "Param is required!" );
-	} catch ( error ) {
-		logger.error( error.message );
-		throw Error( error.message );
-	}
-};
-
 // return random number
 const randomNumber = ( minimum = 0, maximum = 100 ) => Math.round( Math.random() * ( maximum - minimum ) + minimum );
 
@@ -24,14 +14,15 @@ const randomId = () => {
 };
 
 // capitalize only first letter in a string: "hello world!" => "Hello world!"
-const capitalizeFirstLetter = ( string = isRequired() ) => {
+const capitalizeFirstLetter = ( string = "" ) => {
 	try {
 		if ( typeof string !== "string" ) throw new Error( `Passed param is not a string, but an ${typeof string}.` );
 		if ( !string ) throw new Error( "Passed param is empty." );
 		return string.charAt( 0 ).toUpperCase() + string.slice( 1 );
 	} catch ( error ) {
 		logger.error( error.message );
-		return string;
+		throw new Error( error.message );
+		// return string;
 	}
 };
 
