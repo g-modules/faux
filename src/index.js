@@ -1,4 +1,5 @@
-/* eslint no-empty-function: 0 */
-export default function faux () {
+import { name } from "./units/name.js";
 
-}
+export default { name };
+
+export { name };
