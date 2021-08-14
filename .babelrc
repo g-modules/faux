@@ -1,3 +1,21 @@
 {
-  "presets": ["@babel/preset-env"]
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "extensions": [
+          ".js"
+        ],
+        "alias": {
+          "@helpers": "./helpers",
+          "@units": "./units",
+          "@dict": "./dict"
+        }
+      }
+    ]
+  ]
 }

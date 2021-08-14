@@ -3,8 +3,8 @@ import { logger } from "./src/helpers/logger.js";
 import { name } from "./src/index.js";
 
 
-const testName = name.last();
-logger.info( testName );
+logger.info( `First: ${name.first}` );
+logger.info( `Last: ${name.last}` );
 
 
 // buffer
