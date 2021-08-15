@@ -25,13 +25,14 @@
 	"type": "module",
 	"scripts": {
 		"dev": "nodemon index.js",
-		"test": "jest",
+		"test": "node --experimental-vm-modules node_modules/.bin/jest",
 		"lint": "eslint '**/*.js'",
 		"lint:fix": "eslint '**/*.js' --fix"
 	},
 	"devDependencies": {
 		"@babel/core": "7.15.0",
 		"@babel/node": "7.14.9",
+		"@babel/plugin-transform-modules-commonjs": "^7.15.0",
 		"@babel/preset-env": "7.15.0",
 		"@g-modules/eslint-config": "latest",
 		"babel-plugin-module-resolver": "4.1.0",
