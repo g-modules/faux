@@ -1,3 +1,4 @@
+/* global describe, test, expect */
 import { name, getItem } from "../../../src/units/name.js";
 
 

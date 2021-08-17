@@ -1,3 +1,4 @@
+/* global describe, test, expect */
 import dictNameFirstMale from "../../../../src/dict/en-US/dictNameFirstMale.js";
 
 describe( "dict:", () => {
